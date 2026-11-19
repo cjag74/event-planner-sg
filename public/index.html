@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event Planner SG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Plan your month</p>
+      <h1>Find events worth the trip</h1>
+      <p class="sub">Browse Singapore events by week and see how to get there by bus and MRT.</p>
+      <a class="hero-link" href="add.html">+ Add an event</a>
+    </div>
+  </header>
+
+  <section class="wrap search" aria-label="Search">
+    <label class="field">
+      <span>Leaving from (postal code)</span>
+      <input id="postal" inputmode="numeric" maxlength="6" placeholder="e.g. 560123" autocomplete="postal-code">
+    </label>
+    <label class="field">
+      <span>Month</span>
+      <input id="month" type="month">
+    </label>
+    <label class="field">
+      <span>Sort by</span>
+      <select id="sort">
+        <option value="date">Date and time</option>
+        <option value="nearest">Nearest first</option>
+      </select>
+    </label>
+  </section>
+
+  <div class="wrap">
+    <div class="chips" role="group" aria-label="Filters">
+      <label class="chip"><input id="freeOnly" type="checkbox"><span>Free events</span></label>
+      <label class="chip"><input id="planOnly" type="checkbox"><span>★ My plan</span></label>
+    </div>
+    <p id="postalMsg" class="msg" role="status"></p>
+    <p id="sampleBanner" class="banner" hidden>Showing sample events. Replace them in <code>events.json</code> with real events.</p>
+
+    <main id="weeks" aria-live="polite"></main>
+
+    <footer>
+      <p>Routes by <a href="https://transitous.org" target="_blank" rel="noopener">Transitous</a> and postal codes by OpenStreetMap contributors. Travel times, especially for MRT, are estimates.</p>
+    </footer>
+  </div>
+  <script src="api.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "event-planner-sg",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Plan Singapore events by week, with public transport directions from your postal code.",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "build:static": "node scripts/build-static.mjs"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

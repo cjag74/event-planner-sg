@@ -1,0 +1,17 @@
+{
+  "_readme": "Hand-picked events. Every entry below marked sample:true is a PLACEHOLDER, not a real event - replace them with real events you pick yourself. Fields: id (unique), title, start/end (ISO with +08:00), venue, postal (6-digit), lat/lng (venue coordinates, optional - looked up from postal if missing, but less accurate), price (text), url (event page), image (optional URL), online (true = no directions), sample (true = placeholder).",
+  "events": [
+    { "id": "s01", "sample": true, "title": "SAMPLE - Evening concert at the Esplanade", "start": "2026-11-21T19:30:00+08:00", "end": "2026-11-21T21:30:00+08:00", "venue": "Esplanade - Theatres on the Bay", "postal": "038981", "lat": 1.2897, "lng": 103.8554, "price": "From S$25" },
+    { "id": "s02", "sample": true, "title": "SAMPLE - Weekend art tour", "start": "2026-11-22T10:00:00+08:00", "end": "2026-11-22T12:00:00+08:00", "venue": "National Gallery Singapore", "postal": "178957", "lat": 1.2903, "lng": 103.8515, "price": "S$20" },
+    { "id": "s03", "sample": true, "title": "SAMPLE - Online career talk", "start": "2026-11-25T19:00:00+08:00", "end": "2026-11-25T20:00:00+08:00", "venue": "Online", "online": true, "price": "Free" },
+    { "id": "s04", "sample": true, "title": "SAMPLE - Garden light walk", "start": "2026-11-28T19:00:00+08:00", "end": "2026-11-28T21:00:00+08:00", "venue": "Gardens by the Bay", "postal": "018953", "lat": 1.2816, "lng": 103.8636, "price": "Free" },
+    { "id": "s05", "sample": true, "title": "SAMPLE - Science and art exhibition", "start": "2026-12-03T11:00:00+08:00", "end": "2026-12-03T18:00:00+08:00", "venue": "ArtScience Museum", "postal": "018974", "lat": 1.2863, "lng": 103.8593, "price": "From S$30" },
+    { "id": "s06", "sample": true, "title": "SAMPLE - Food and drink fair", "start": "2026-12-06T12:00:00+08:00", "end": "2026-12-06T20:00:00+08:00", "venue": "Marina Bay Sands Expo", "postal": "018956", "lat": 1.2834, "lng": 103.8607, "price": "S$12" },
+    { "id": "s07", "sample": true, "title": "SAMPLE - Arena show", "start": "2026-12-10T20:00:00+08:00", "end": "2026-12-10T22:30:00+08:00", "venue": "Singapore Indoor Stadium", "postal": "397630", "lat": 1.3008, "lng": 103.8745, "price": "From S$68" },
+    { "id": "s08", "sample": true, "title": "SAMPLE - Free community concert", "start": "2026-12-13T17:00:00+08:00", "end": "2026-12-13T19:00:00+08:00", "venue": "Esplanade - Theatres on the Bay", "postal": "038981", "lat": 1.2897, "lng": 103.8554, "price": "Free" },
+    { "id": "s09", "sample": true, "title": "SAMPLE - Gallery late night", "start": "2026-12-18T19:00:00+08:00", "end": "2026-12-18T22:00:00+08:00", "venue": "National Gallery Singapore", "postal": "178957", "lat": 1.2903, "lng": 103.8515, "price": "S$15" },
+    { "id": "s10", "sample": true, "title": "SAMPLE - Year-end market", "start": "2026-12-20T11:00:00+08:00", "end": "2026-12-20T21:00:00+08:00", "venue": "Gardens by the Bay", "postal": "018953", "lat": 1.2816, "lng": 103.8636, "price": "Free" },
+    { "id": "s11", "sample": true, "title": "SAMPLE - New Year countdown party", "start": "2026-12-26T21:00:00+08:00", "end": "2026-12-27T01:00:00+08:00", "venue": "Marina Bay Sands Expo", "postal": "018956", "lat": 1.2834, "lng": 103.8607, "price": "From S$40" },
+    { "id": "s12", "sample": true, "title": "SAMPLE - Online photography workshop", "start": "2026-12-29T19:30:00+08:00", "end": "2026-12-29T21:00:00+08:00", "venue": "Online", "online": true, "price": "S$10" }
+  ]
+}

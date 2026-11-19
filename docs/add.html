@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Add an event · Event Planner SG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero small">
+    <div class="wrap">
+      <a class="back" href="/">← Back to events</a>
+      <h1>Add an event</h1>
+      <p class="sub">Enter the details of an event you want to plan around. It appears in the right week straight away.</p>
+    </div>
+  </header>
+
+  <main class="wrap form-wrap">
+    <form id="form" class="panel" novalidate>
+      <label class="f">Title *
+        <input name="title" maxlength="120" required placeholder="e.g. Jazz night at the Esplanade">
+      </label>
+
+      <div class="grid3">
+        <label class="f">Date *
+          <input name="date" type="date" required>
+        </label>
+        <label class="f">Starts *
+          <input name="startTime" type="time" required>
+        </label>
+        <label class="f">Ends (optional)
+          <input name="endTime" type="time">
+        </label>
+      </div>
+
+      <label class="chip inline"><input name="online" type="checkbox"><span>Online event</span></label>
+
+      <div id="placeFields" class="grid2">
+        <label class="f">Venue name *
+          <input name="venue" maxlength="120" placeholder="e.g. Esplanade - Theatres on the Bay">
+        </label>
+        <label class="f">Venue postal code
+          <input name="postal" inputmode="numeric" maxlength="6" placeholder="e.g. 038981">
+        </label>
+      </div>
+      <label class="f" id="coordsField">Exact location (optional)
+        <input name="coords" maxlength="40" placeholder="e.g. 1.2816, 103.8636">
+        <span class="hint">We find the venue from its name, then its postal code. If that lands in the wrong place, right-click the spot in Google Maps, click the numbers to copy them, and paste here.</span>
+      </label>
+
+      <div class="grid2">
+        <label class="f">Price
+          <input name="price" maxlength="40" placeholder="e.g. From S$25">
+        </label>
+        <label class="chip inline push"><input name="free" type="checkbox"><span>Free event</span></label>
+      </div>
+
+      <label class="f">Event page link (optional)
+        <input name="url" type="url" maxlength="500" placeholder="https://...">
+      </label>
+      <label class="f">Image link (optional)
+        <input name="image" type="url" maxlength="500" placeholder="https://...">
+      </label>
+
+      <p id="msg" class="msg" role="status"></p>
+      <p id="where" class="msg"></p>
+      <div class="actions">
+        <button class="primary" type="submit" id="save">Save event</button>
+        <button type="button" id="clearSamples">Remove sample events</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="api.js"></script>
+  <script src="add.js"></script>
+</body>
+</html>
